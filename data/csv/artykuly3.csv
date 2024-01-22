@@ -1,0 +1,31 @@
+id_artykul,tytul,podtytul,data_utworzenia,status,data_zmiany
+21,"Nowe trendy w designie graficznym","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-23 11:45:00,UTWORZONY,2024-01-23 13:00:00
+22,"Etyka w rozwoju sztucznej inteligencji","Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-23 12:30:00,FINALIZACJA,2024-01-23 13:45:00
+23,"Przyszłość sztucznej inteligencji w medycynie","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",2024-01-23 13:15:00,UTWORZONY,2024-01-23 14:30:00
+24,"Innowacyjne metody nauczania online","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-23 13:45:00,W KOREKCIE,2024-01-23 15:00:00
+25,"Blockchain w praktyce","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-23 14:30:00,FINALIZACJA,2024-01-23 15:45:00
+26,"Wpływ technologii na rozwój społeczeństwa","Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-23 15:15:00,UTWORZONY,2024-01-23 16:30:00
+27,"Rola danych w nowoczesnym biznesie","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",2024-01-23 15:45:00,W KOREKCIE,2024-01-23 17:00:00
+28,"Zastosowanie sztucznej inteligencji w marketingu","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-23 16:30:00,UTWORZONY,2024-01-23 17:45:00
+29,"Nowe technologie w edukacji","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-23 17:15:00,FINALIZACJA,2024-01-23 18:30:00
+30,"Budowa zespołów w środowisku zdalnym","Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-23 18:00:00,UTWORZONY,2024-01-23 19:15:00
+31,"Rola sztucznej inteligencji w biznesie","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-23 18:30:00,W KOREKCIE,2024-01-23 19:45:00
+32,"Nowoczesne podejście do zdrowego stylu życia","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-23 19:15:00,UTWORZONY,2024-01-23 20:30:00
+33,"Wpływ sztucznej inteligencji na edukację","Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-23 19:45:00,FINALIZACJA,2024-01-23 21:00:00
+34,"Nowe trendy w projektowaniu interfejsów","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",2024-01-23 20:30:00,W KOREKCIE,2024-01-23 21:45:00
+35,"Etyka w sztucznej inteligencji","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-23 21:15:00,UTWORZONY,2024-01-23 22:30:00
+36,"Przyszłość pracy zdalnej","Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-23 21:45:00,UTWORZONY,2024-01-23 23:00:00
+37,"Wpływ sztucznej inteligencji na sztukę","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-23 22:30:00,FINALIZACJA,2024-01-23 23:45:00
+38,"Nowe spojrzenie na edukację dziecięcą","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",2024-01-23 23:00:00,UTWORZONY,2024-01-24 00:15:00
+39,"Rozwój sztucznej inteligencji w medycynie","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-23 23:30:00,W KOREKCIE,2024-01-24 00:45:00
+40,"E-commerce po pandemii","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-24 00:15:00,FINALIZACJA,2024-01-24 01:30:00
+41,"Budowa zespołów w środowisku zdalnym","Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-24 00:45:00,UTWORZONY,2024-01-24 02:00:00
+42,"Przyszłość transportu publicznego","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-24 01:30:00,FINALIZACJA,2024-01-24 02:45:00
+43,"Nowoczesne podejście do zdrowego stylu życia","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-24 02:15:00,UTWORZONY,2024-01-24 03:30:00
+44,"Wpływ sztucznej inteligencji na edukację","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",2024-01-24 02:45:00,W KOREKCIE,2024-01-24 04:00:00
+45,"Nowe trendy w projektowaniu interfejsów","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-24 03:30:00,FINALIZACJA,2024-01-24 04:45:00
+46,"Etyka w sztucznej inteligencji","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-24 04:00:00,UTWORZONY,2024-01-24 05:15:00
+47,"Przyszłość pracy zdalnej","Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",2024-01-24 04:30:00,UTWORZONY,2024-01-24 05:45:00
+48,"Wpływ sztucznej inteligencji na sztukę","Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",2024-01-24 05:15:00,FINALIZACJA,2024-01-24 06:30:00
+49,"Nowe spojrzenie na edukację dziecięcą","Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",2024-01-24 05:45:00,UTWORZONY,2024-01-24 07:00:00
+50,"Rozwój sztucznej inteligencji w medycynie","Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.",2024-01-24 06:15:00,W KOREKCIE,2024-01-24 07:30:00
