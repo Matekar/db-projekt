@@ -13,12 +13,12 @@
 				<li><a href="/tabela/autorzy">Autorzy</a></li>
 				<li><a href="/tabela/redaktorzy">Redaktorzy</a></li>
 				<li><a href="/tabela/artykuly">Artykuly</a></li>
-				<li><a href="/tabela/cytowania">Cytowania</a></li>
+				<!-- <li><a href="/tabela/cytowania">Cytowania</a></li>
 				<li><a href="/tabela/raa">Relacje Autor-Artykul</a></li>
-				<li><a href="/tabela/rra">Relacje Redaktor-Artykul</a></li>
+				<li><a href="/tabela/rra">Relacje Redaktor-Artykul</a></li> -->
 			</ul>
 		</nav>
-		<nav>
+		<!-- <nav>
 			<h2>Widoki</h2>
 			<ul>
 				<li>
@@ -27,7 +27,7 @@
 					><a href="/widok/sfinalizowane_artykuly">Artykuły sfinalizowane</a>
 				</li>
 			</ul>
-		</nav>
+		</nav> -->
 	</header>
 	<main>
 		<slot />
