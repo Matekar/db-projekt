@@ -4,11 +4,8 @@
 
 <div class="app">
 	<header>
-		<div>
-			<h1>Baza danych - Redakcja</h1>
-		</div>
 		<nav>
-			<h2>Tabele</h2>
+			<h1>Baza danych - Redakcja</h1>
 			<ul>
 				<li><a href="/tabela/autorzy">Autorzy</a></li>
 				<li><a href="/tabela/redaktorzy">Redaktorzy</a></li>
@@ -18,6 +15,10 @@
 				<li><a href="/tabela/rra">Relacje Redaktor-Artykul</a></li> -->
 			</ul>
 		</nav>
+		<!-- <nav>
+			<h2>Tabele</h2>
+			
+		</nav> -->
 		<!-- <nav>
 			<h2>Widoki</h2>
 			<ul>
