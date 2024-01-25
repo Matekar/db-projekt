@@ -3,7 +3,7 @@
 	export let data;
 </script>
 
-<h1><a href="../artykuly">←</a> {data.props.data.tytul}</h1>
+<h1><a href="/tabela/artykuly">←</a> {data.props.data.tytul}</h1>
 <section>
 	<table>
 		{#each Object.keys(data.props.data) as key}
