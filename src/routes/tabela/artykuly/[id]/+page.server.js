@@ -15,12 +15,20 @@ export async function load({ params }) {
 			params.id
 		]);
 
+		const cites = await client.query(
+			`SELECT art.tytul FROM projekt.cytowania cyt
+      JOIN projekt.artykuly art ON cyt.id_zacytowane = art.id_artykul
+      WHERE cyt.id_przez = $1`,
+			[params.id]
+		);
+
 		return {
 			props: {
 				data: {
 					...result.rows[0],
 					autorzy: authors.rows,
-					redaktorzy: redactors.rows
+					redaktorzy: redactors.rows,
+					cytuje: cites.rows
 				}
 			}
 		};

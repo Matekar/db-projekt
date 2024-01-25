@@ -3,7 +3,7 @@
 	export let data;
 </script>
 
-<h1>{data.props.data.tytul}</h1>
+<h1><a href="../artykuly">←</a> {data.props.data.tytul}</h1>
 <section>
 	<table>
 		{#each Object.keys(data.props.data) as key}
@@ -20,6 +20,12 @@
 						<ul>
 							{#each data.props.data[key] as redaktor}
 								<li>{redaktor.imie_redaktor} {redaktor.nazwisko_redaktor}: {redaktor.rola}</li>
+							{/each}
+						</ul>
+					{:else if key == 'cytuje'}
+						<ul>
+							{#each data.props.data[key] as cyt}
+								<li>{cyt.tytul}</li>
 							{/each}
 						</ul>
 					{:else}
