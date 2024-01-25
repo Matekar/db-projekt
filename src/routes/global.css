@@ -73,6 +73,7 @@ nav li {
 	padding: var(--nav-element-spacing-vertical) calc(var(--nav-element-spacing-horizontal) * 0.5);
 }
 
+table td > a,
 nav li > a {
 	font-size: 1.25rem;
 	display: inline-block;
@@ -86,16 +87,22 @@ nav li > a {
 	cursor: pointer;
 }
 
+table td > a:hover,
+table td > a:active,
+table td > a:focus,
 nav li > a:hover,
 nav li > a:active,
 nav li > a:focus {
 	text-decoration: none;
 }
 
+table td > a:hover,
 nav li > a:hover {
 	background-color: #3c3c3c;
 }
 
+table td > a:active,
+table td > a:focus,
 nav li > a:focus,
 nav li > a:active {
 	transform: scale(0.9);

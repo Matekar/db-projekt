@@ -11,6 +11,7 @@
 				<td>{data.id_artykul}</td>
 				<td>{data.tytul}</td>
 				<td>{data.data_utworzenia}</td>
+				<td><a href="./artykuly/{data.id_artykul}">Szczegóły</a></td>
 			</tr>
 		{/each}
 	</table>
