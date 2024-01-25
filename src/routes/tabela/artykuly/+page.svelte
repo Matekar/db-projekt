@@ -1,7 +1,25 @@
 <script>
 	// @ts-nocheck
+	import { invalidateAll } from '$app/navigation';
 
 	export let data;
+
+	/**
+	 * @param {any} event
+	 */
+	async function insert(event) {
+		const formElement = event.target;
+		const formData = new FormData(formElement);
+
+		const res = await fetch(formElement.action, {
+			method: 'POST',
+			body: formData
+		});
+
+		await invalidateAll();
+
+		formElement.reset();
+	}
 </script>
 
 <h1>Artykuły</h1>
@@ -22,8 +40,13 @@
 		{/each}
 	</table>
 	<div>
-		<form>
-			<input type="text" />
+		<form on:submit|preventDefault={insert} action="/tabela/artykuly">
+			<h2>Dodaj Artykuł</h2>
+			<label for="tytul">Tytul:</label>
+			<input type="text" name="tytul" id="tytul" required />
+			<label for="podtytul">Podtytuł:</label>
+			<input type="text" name="podtytul" id="podtytul" required />
+			<input type="submit" value="Dodaj" />
 		</form>
 	</div>
 </section>

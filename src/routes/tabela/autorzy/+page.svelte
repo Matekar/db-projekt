@@ -10,11 +10,11 @@
 	 */
 	async function insert(event) {
 		const formElement = event.target;
-		const data = new FormData(formElement);
+		const formData = new FormData(formElement);
 
 		const res = await fetch(formElement.action, {
 			method: 'POST',
-			body: data
+			body: formData
 		});
 
 		await invalidateAll();
