@@ -9,9 +9,19 @@ export async function load({ params }) {
 			[params.id]
 		);
 
+		const authors = await client.query('SELECT * FROM projekt.autorzy_artykulu($1)', [params.id]);
+
+		const redactors = await client.query('SELECT * FROM projekt.redaktorzy_artykulu($1)', [
+			params.id
+		]);
+
 		return {
 			props: {
-				data: result.rows[0]
+				data: {
+					...result.rows[0],
+					autorzy: authors.rows,
+					redaktorzy: redactors.rows
+				}
 			}
 		};
 	} finally {

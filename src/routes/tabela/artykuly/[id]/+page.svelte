@@ -3,12 +3,29 @@
 	export let data;
 </script>
 
+<h1>{data.props.data.tytul}</h1>
 <section>
 	<table>
 		{#each Object.keys(data.props.data) as key}
 			<tr>
 				<td>{key}</td>
-				<td>{data.props.data[key]}</td>
+				<td>
+					{#if key == 'autorzy'}
+						<ul>
+							{#each data.props.data[key] as autor}
+								<li>{autor.imie} {autor.nazwisko}</li>
+							{/each}
+						</ul>
+					{:else if key == 'redaktorzy'}
+						<ul>
+							{#each data.props.data[key] as redaktor}
+								<li>{redaktor.imie_redaktor} {redaktor.nazwisko_redaktor}: {redaktor.rola}</li>
+							{/each}
+						</ul>
+					{:else}
+						{data.props.data[key]}
+					{/if}
+				</td>
 			</tr>
 		{/each}
 	</table>
