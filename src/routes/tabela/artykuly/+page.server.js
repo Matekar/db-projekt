@@ -8,9 +8,14 @@ export async function load() {
 			'SELECT id_artykul as "ID", tytul as "Tytuł", data_utworzenia as "Data utworzenia" FROM projekt.artykuly ORDER BY id_artykul'
 		);
 
+		const authors = await client.query(
+			`SELECT id_author, CONCAT(imie,' ',nazwisko) AS nazwa FROM projekt.autorzy`
+		);
+
 		return {
 			props: {
-				data: result.rows
+				data: result.rows,
+				authors: authors.rows
 			}
 		};
 	} finally {

@@ -246,3 +246,10 @@ input[type='submit']:hover {
 input[type='submit']:active {
 	transform: scale(0.9);
 }
+
+select {
+	width: 80%;
+	max-width: 25rem;
+	font-size: 1.15rem;
+	padding: 0.5rem;
+}

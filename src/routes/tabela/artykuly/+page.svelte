@@ -46,6 +46,12 @@
 			<input type="text" name="tytul" id="tytul" required />
 			<label for="podtytul">Podtytuł:</label>
 			<input type="text" name="podtytul" id="podtytul" required />
+			<label for="autor">Autor:</label>
+			<select name="autor" id="autor">
+				{#each data.props.authors as author}
+					<option value={author.id_author}>{author.nazwa}</option>
+				{/each}
+			</select>
 			<input type="submit" value="Dodaj" />
 		</form>
 	</div>

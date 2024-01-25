@@ -15,6 +15,13 @@ export async function POST({ request }) {
 			'INSERT INTO projekt.artykuly VALUES (DEFAULT, $1, $2, $3, DEFAULT, $3)',
 			data
 		);
+
+		const id = await client.query('SELECT MAX(id_artykul) AS ID FROM projekt.artykuly');
+
+		const author_result = await client.query(
+			'INSERT INTO projekt.relacja_autor_artykul VALUES (DEFAULT, $1, $2)',
+			[formData.get('autor'), id.rows[0].id]
+		);
 	} finally {
 		await disconnect(client);
 	}
