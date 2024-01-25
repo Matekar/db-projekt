@@ -4,7 +4,9 @@ export async function load() {
 	const client = await connect();
 
 	try {
-		const result = await client.query('SELECT * FROM projekt.autorzy');
+		const result = await client.query(
+			'SELECT id_author AS "ID", imie AS "Imie", nazwisko AS "Nazwisko" FROM projekt.autorzy'
+		);
 
 		return {
 			props: {

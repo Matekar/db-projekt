@@ -7,12 +7,17 @@
 <h1>Artykuły</h1>
 <section>
 	<table>
+		<tr>
+			{#each Object.keys(data.props.data[0]) as header}
+				<th>{header}</th>
+			{/each}
+		</tr>
 		{#each data.props.data as data}
 			<tr>
-				<td>{data.id_artykul}</td>
-				<td>{data.tytul}</td>
-				<td>{data.data_utworzenia}</td>
-				<td><a href="./artykuly/{data.id_artykul}">Szczegóły&nbsp;→</a></td>
+				<td>{data.ID}</td>
+				<td>{data.Tytuł}</td>
+				<td>{data['Data utworzenia']}</td>
+				<td><a href="./artykuly/{data.ID}">Szczegóły&nbsp;→</a></td>
 			</tr>
 		{/each}
 	</table>

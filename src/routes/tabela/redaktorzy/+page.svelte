@@ -7,11 +7,16 @@
 <h1>Redaktorzy</h1>
 <section>
 	<table>
+		<tr>
+			{#each Object.keys(data.props.data[0]) as header}
+				<th>{header}</th>
+			{/each}
+		</tr>
 		{#each data.props.data as data}
 			<tr>
-				<td>{data.id_redaktor}</td>
-				<td>{data.imie_redaktor}</td>
-				<td>{data.nazwisko_redaktor}</td>
+				<td>{data.ID}</td>
+				<td>{data.Imie}</td>
+				<td>{data.Nazwisko}</td>
 			</tr>
 		{/each}
 	</table>
