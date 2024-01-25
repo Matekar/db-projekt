@@ -4,6 +4,7 @@
 	export let data;
 </script>
 
+<h1>Artykuły</h1>
 <section>
 	<table>
 		{#each data.props.data as data}
@@ -11,7 +12,7 @@
 				<td>{data.id_artykul}</td>
 				<td>{data.tytul}</td>
 				<td>{data.data_utworzenia}</td>
-				<td><a href="./artykuly/{data.id_artykul}">Szczegóły</a></td>
+				<td><a href="./artykuly/{data.id_artykul}">Szczegóły&nbsp;→</a></td>
 			</tr>
 		{/each}
 	</table>
@@ -25,6 +26,6 @@
 <style>
 	section {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
 	}
 </style>

@@ -4,6 +4,7 @@
 	export let data;
 </script>
 
+<h1>Redaktorzy</h1>
 <section>
 	<table>
 		{#each data.props.data as data}
