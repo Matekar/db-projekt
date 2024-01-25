@@ -43,9 +43,9 @@
 		<form on:submit|preventDefault={insert} action="/tabela/autorzy">
 			<h2>Dodaj Autora</h2>
 			<label for="imie">Imie:</label>
-			<input type="text" name="imie" id="imie" />
+			<input type="text" name="imie" id="imie" required />
 			<label for="nazwisko">Nazwisko:</label>
-			<input type="text" name="nazwisko" id="nazwisko" />
+			<input type="text" name="nazwisko" id="nazwisko" required />
 			<input type="submit" value="Dodaj" />
 		</form>
 	</div>
