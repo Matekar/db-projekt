@@ -199,6 +199,15 @@ form {
 	margin: 0.5rem 0;
 	align-items: center;
 }
+
+form > h2,
+form > label {
+	display: block;
+	width: 80%;
+	max-width: 25rem;
+	text-align: left;
+}
+
 input[type='text'],
 input[type='password'],
 input[type='submit'] {
