@@ -29,12 +29,14 @@
 			{#each Object.keys(data.props.data[0]) as header}
 				<th>{header}</th>
 			{/each}
+			<th>Redaguje</th>
 		</tr>
-		{#each data.props.data as data}
+		{#each data.props.data as name, index}
 			<tr>
-				<td>{data.ID}</td>
-				<td>{data.Imie}</td>
-				<td>{data.Nazwisko}</td>
+				<td>{name.ID}</td>
+				<td>{name.Imie}</td>
+				<td>{name.Nazwisko}</td>
+				<td>{data.props.articleCount[index].count}</td>
 			</tr>
 		{/each}
 	</table>

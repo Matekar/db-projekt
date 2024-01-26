@@ -8,9 +8,12 @@ export async function load() {
 			'SELECT id_redaktor AS "ID", imie_redaktor AS "Imie", nazwisko_redaktor AS "Nazwisko" FROM projekt.redaktorzy'
 		);
 
+		const articleCount = await client.query('SELECT count FROM projekt.rip');
+
 		return {
 			props: {
-				data: result.rows
+				data: result.rows,
+				articleCount: articleCount.rows
 			}
 		};
 	} finally {
