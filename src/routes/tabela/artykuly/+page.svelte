@@ -5,7 +5,7 @@
 	export let data;
 
 	/**
-	 * @param {any} event
+	 * @param event
 	 */
 	async function insert(event) {
 		const formElement = event.target;
