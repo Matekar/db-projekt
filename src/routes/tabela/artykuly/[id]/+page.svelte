@@ -6,6 +6,8 @@
 	export let data;
 
 	/**
+	 * insert additional information to article
+	 *
 	 * @param event
 	 */
 	async function insert(event) {
@@ -22,6 +24,11 @@
 		formElement.reset();
 	}
 
+	/**
+	 * finalize current article
+	 *
+	 * @param event
+	 */
 	async function finalize(event) {
 		const formElement = event.target;
 		const formData = new FormData();

@@ -5,6 +5,8 @@
 	export let data;
 
 	/**
+	 * Insert new redactor
+	 *
 	 * @param {any} event
 	 */
 	async function insert(event) {

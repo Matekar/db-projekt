@@ -5,6 +5,8 @@
 	export let data;
 
 	/**
+	 * Insert new article
+	 *
 	 * @param event
 	 */
 	async function insert(event) {
