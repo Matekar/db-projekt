@@ -1,5 +1,6 @@
 <script>
 	// @ts-nocheck
+	import { invalidateAll } from '$app/navigation';
 	import { page } from '$app/stores';
 
 	export let data;
@@ -7,22 +8,31 @@
 	/**
 	 * @param event
 	 */
-	async function insertAuthor(event) {
+	async function insert(event) {
 		const formElement = event.target;
+		const formData = new FormData(formElement);
+
+		const res = await fetch(formElement.action, {
+			method: 'POST',
+			body: formData
+		});
+
+		await invalidateAll();
+
+		formElement.reset();
 	}
 
-	/**
-	 * @param event
-	 */
-	async function insertRedactor(event) {
+	async function finalize(event) {
 		const formElement = event.target;
-	}
+		const formData = new FormData();
+		formData.append('finalize', 'true');
 
-	/**
-	 * @param event
-	 */
-	async function insertCite(event) {
-		const formElement = event.target;
+		const res = await fetch(formElement.action, {
+			method: 'POST',
+			body: formData
+		});
+
+		await invalidateAll();
 	}
 </script>
 
@@ -61,7 +71,7 @@
 		{/each}
 	</table>
 	<div>
-		<form on:submit|preventDefault={insertAuthor} action="/tabela/artykuly/{$page}">
+		<form on:submit|preventDefault={insert} action="/tabela/artykuly/{$page.params.id}">
 			<h2>Dodaj Autora:</h2>
 			<label for="autor">Autor:</label>
 			<select name="autor" id="autor">
@@ -72,10 +82,10 @@
 			<input type="submit" value="Dodaj" />
 		</form>
 
-		<form on:submit|preventDefault={insertRedactor} action="/tabela/artykuly/{$page}">
+		<form on:submit|preventDefault={insert} action="/tabela/artykuly/{$page.params.id}">
 			<h2>Dodaj Redaktora:</h2>
-			<label for="autor">Redaktor:</label>
-			<select name="autor" id="autor" required>
+			<label for="redaktor">Redaktor:</label>
+			<select name="redaktor" id="redaktor" required>
 				{#each data.props.formOptions.availableRedactors as ar}
 					<option value={ar.id_redaktor}>{ar.imie_redaktor} {ar.nazwisko_redaktor}</option>
 				{/each}
@@ -91,7 +101,7 @@
 			<input type="submit" value="Dodaj" />
 		</form>
 
-		<form on:submit|preventDefault={insertCite} action="/tabela/artykuly/{$page}">
+		<form on:submit|preventDefault={insert} action="/tabela/artykuly/{$page.params.id}">
 			<h2>Dodaj cytowanie:</h2>
 			<label for="cytowany">Zacytowany artykuł:</label>
 			<select name="cytowany" id="cytowany">
@@ -101,6 +111,14 @@
 			</select>
 			<input type="submit" value="Dodaj" />
 		</form>
+
+		<br />
+
+		{#if data.props.data['status'] != 'FINALIZACJA'}
+			<form on:submit|preventDefault={finalize} action="/tabela/artykuly/{$page.params.id}">
+				<input type="submit" value="Finalizuj" />
+			</form>
+		{/if}
 	</div>
 </section>
 
